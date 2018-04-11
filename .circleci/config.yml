@@ -1,0 +1,6 @@
+jobs:
+  build:
+    machine: true
+    steps:
+      - checkout
+      - run: aws s3 sync /home/circleci/project s3://battlepass.info --delete
